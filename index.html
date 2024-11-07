@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <div id="game">
+        <div id="top-bar">
+            <div id="hp-bar"></div>
+            <div id="coin-counter">Coins: <span id="coin-count">0</span></div>
+        </div>
+        <div id="game-area">
+            <div id="dino"></div>
+            <div id="start-text">Click to start</div>
+            <div id="game-over">Game Over</div>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div id="bottom-bar">
+            <button id="upgrade-button">Upgrade</button>
+            <button id="attack-button">Attack</button>
+        </div>
+    </div>
+    <!-- Попап для улучшений -->
+    <div id="upgrade-popup" class="popup">
+        <div class="popup-content">
+            <h2>Upgrade Your Dino</h2>
+            <p>Coins: <span id="popup-coin-count">0</span></p>
+            <button id="upgrade-jump">Upgrade Jump Height (Cost: 5 coins)</button>
+            <button id="upgrade-radius">Upgrade Attack Radius (Cost: 5 coins)</button>
+            <button id="upgrade-hp">Upgrade HP (Cost: 10 coins)</button>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
