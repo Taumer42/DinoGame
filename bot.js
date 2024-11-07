@@ -5,7 +5,7 @@ bot.command('start', (ctx) => {
     ctx.reply('Привет! Нажмите кнопку ниже, чтобы запустить игру про динозаврика!', {
         reply_markup: {
             inline_keyboard: [
-                [{ text: 'Запустить игру', web_app: { url: 'https://yourdomain.com' } }]
+                [{ text: 'Запустить игру', web_app: { url: 'https://672d4f5d826e457ee8aedec3--testrunraidbot.netlify.app/' } }]
             ]
         }
     });
